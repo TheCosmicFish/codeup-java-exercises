@@ -28,14 +28,18 @@ public class ConsoleExercises {
 
 
         System.out.println("Enter the length of the room");
-        Integer length = scanner.nextInt();
+        //Integer length = scanner.nextInt();
+        Integer length = Integer.parseInt(scanner.nextLine());
         System.out.println("Enter a width of the room");
-        Integer width = scanner.nextInt();
-        Integer area = width * length;
-        Integer perimeter = (width * length) * 2;
-        System.out.println("The perimeter of the room is:");
-        System.out.println(perimeter);
-        System.out.println("The area of the room is:");
-        System.out.println(area);
+        //Integer width = scanner.nextInt();
+        Integer width = Integer.parseInt(scanner.nextLine());
+        //Integer area = width * length;
+        //Integer perimeter = (width * length) * 2;
+       // System.out.println("The perimeter of the room is:");
+        //System.out.println(perimeter);
+        //System.out.println("The area of the room is:");
+        //System.out.println(area);
+
+        System.out.printf("The length of the room is %d %n and the width of the room is %d %n Which means the perimeter of the room is %d and the area is %d %n", length, width, (2* length) + (2 * width), length * width );
     }
 }
