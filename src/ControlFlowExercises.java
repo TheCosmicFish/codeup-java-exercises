@@ -12,7 +12,13 @@ public class ControlFlowExercises {
             if(j % 5 == 0){
             System.out.println("j is " + j);}
             j--;
-        }while (j >= 0);
+        }while (j >= -10);
+
+        long r =2;
+        do{
+            System.out.println(r);
+            r *= r;
+        } while(r <= 1000000);
 
         for(int k = 5; k <=15 ; k++){
             System.out.println("k is " + k);
@@ -43,7 +49,7 @@ public class ControlFlowExercises {
        System.out.println("------ | ------- | ------");
        for(int c = 0; c <= userInput; c++){
 
-       System.out.println(c + "      |" + c * c + "       |" + c * c * c);}
+       System.out.println(c + "      | " + c * c + "       | " + c * c * c);}
 
         System.out.print("continue? [y/N]");
         String userContinue = scanner.next();
